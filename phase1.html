@@ -10,19 +10,31 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   </head>
   <body>
+      <div class="col-md-4 centered">
       <form>
       <label>Name
-          <input type="text" required > 
+          <input type="text" required id="name"> 
       </label>
+      <br>
       <label>Email
-        <input type="email" required > 
+        <input type="email" required id="email"> 
     </label>
+    <br>
     <label>Birth Date
-        <input type="date" required > 
+        <input type="date" required id="birth" > 
     </label>
-
-    <button type="submit" >Next</button>
+    <div class="row">
+    <a href="phase2.html">Next</a>
+</div>
 </form>
+</div>
+<script>
+        
+            localStorage.setItem("name", document.querySelector("#name").value);
+            localStorage.setItem("email", document.querySelector("#email").value);
+            localStorage.setItem("birth", document.querySelector("#birth").value);
+            
+        </script>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
