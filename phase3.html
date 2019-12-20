@@ -27,9 +27,14 @@
       <option id="4">Cars</option> id="3"
       <option id="5">Dolls</option id="4">
       </select>
-    <br>
+    <br><a href="phase2.html">prev</a>
 </form>
-    <a 5ref="phase2.html">prev</a>
+<script>
+  function printFunc() {
+      localStorage.setItem("image", document.querySelector("#inputImage").value);
+      localStorage.setItem("Hobbies", document.querySelector("#inputHoobies").value);
+      }
+  </script>
     <!----> Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
